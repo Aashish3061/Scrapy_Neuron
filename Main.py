@@ -50,7 +50,6 @@ class main(scrapy.Spider):
             
 @wait_for(10)
 def run_main():
-    """run spider with MJKQuotesToCsv"""
     crawler = CrawlerRunner()
     d = crawler.crawl(main)
     return d
